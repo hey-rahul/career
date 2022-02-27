@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KPJHELRE9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6KPJHELRE9');
+    </script>
+
+    <link rel="icon"
+        href="https://docs.google.com/drawings/d/e/2PACX-1vTsISpsKu-Hn0EdJePBw_UC3y5GBIL-4S-dauzSMiG3Ys3oksH13kBv2qcQLgWSBwhRNPkKgOmPcazN/pub?w=30&amp;h=30"
+        type="image/gif">
+    <title>Career Options</title>
+    <meta property="og:title" content="Career Options" />
+    <meta property="og:description" content="DOCS from Rahul Natha" />
+    <meta property="og:url" content="https://natharahul.github.io" />
+    <meta property="og:image"
+        content="https://docs.google.com/drawings/d/e/2PACX-1vTsISpsKu-Hn0EdJePBw_UC3y5GBIL-4S-dauzSMiG3Ys3oksH13kBv2qcQLgWSBwhRNPkKgOmPcazN/pub?w=379&amp;h=379" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            min-width: 130px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: -175%;
+            left: 20%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: -33%;
+            transform: rotate(180deg);
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif; margin:0;padding:0;
+            background-color: rgb(217, 217, 217);
+        }
+
+        @media screen and (min-width: 650px) {
+            .bottom-bar-for-google-sheet {
+                position: fixed;
+                bottom: 0;
+                left: 0px;
+                height: 37px;
+                border-radius: 3px;
+                width: 100%;
+                background-color: whitesmoke;
+                z-index: 99;
+            }
+
+            .top-bar-for-google-sheet {
+                position: fixed;
+                top: 0%;
+                left: 0px;
+                border-radius: 3px;
+                margin: 0;
+                height: 28px;
+                padding: 0;
+                width: 100%;
+                color: black;
+                background-color: whitesmoke;
+                z-index: 999;
+            }
+
+            #screensizeerror {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1300px) {
+
+            #hideonclick {
+                display: none;
+            }
+
+            #cal-toggle {
+                display: none;
+            }
+
+            #cal-toggle2 {
+                display: none;
+            }
+
+            #at {
+                display: none;
+            }
+
+            .removeonphone {
+                display: none;
+            }
+
+            #screensizeerror {
+                display: block;
+            }
+        }
+
+
+
+        @media screen and (max-width: 650px) {
+
+
+
+            .bottom-bar-for-google-sheet {
+                position: fixed;
+                bottom: 0;
+                left: 0px;
+                height: 52px;
+                width: 100%;
+                background-color: whitesmoke;
+                z-index: 99;
+            }
+
+            .top-bar-for-google-sheet {
+                position: fixed;
+                top: 0%;
+                left: 0px;
+                margin: 0;
+                height: 28px;
+                padding: 0;
+                width: 100%;
+                color: black;
+                background-color: whitesmoke;
+                z-index: 999;
+            }
+        }
+
+        .suggestion_pop_up {
+            width: 380px;
+            min-height: 300px;
+            position: fixed;
+            top: 60px;
+            bottom: 60px;
+            right: 13%;
+            z-index: 999;
+            background-color: #eee;
+            border-radius: 10px;
+        }
+
+        .suggestion_pop_up_closed {
+            min-width: 100px;
+            min-height: 30px;
+            position: fixed;
+            bottom: 60px;
+            right: 13%;
+            z-index: 999;
+            background-color: #eee;
+            border-radius: 10px;
+        }
+
+
+        .hidden {
+            display: none;
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* canvas {z-index:99; position:fixed; top:32px; left:912px;  width:300px; height:300px; border:1px solid grey;} */
+        @media print {
+
+            html,
+            body {
+                display: none;
+                /* hide whole page */
+            }
+        }
+
+
+        .noselect {
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Old versions of Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+        }
+
+        p {margin: 0;}
+
+    </style>
+</head>
+
+<body onload="autoinvert() ">
+
+
+    <div id="webpage" class="noselect">
+
+        <div
+            style="width: 45%; height: calc(100% - 0px); border:none; margin: 49px 0px 50px 10%; padding:30px;  float:left; z-index:9; background-color: white; font-family: 'Roboto Condensed', sans-serif; color:black; border-radius: 10px;">
+            <p style="margin:0;">Hello</p>
+
+        </div>
+
+
+        <div id="screensizeerror" style="position:fixed; 
+        background-color: rgb(222, 222, 222);  
+        left:0px; top:26px; bottom:0px; width:100%;height:calc(100% - 25px); z-index:9999; font-size: 16px; ">
+
+            <p style="display: block; color: rgb(0, 0, 0); margin: 20px ;">This website isn't designed for this screen
+                size. Try opening on a
+                bigger screen.</p>
+        </div>
+
+
+        <div 
+            style="  border:none;  padding:30px;   background-color: #fff; 
+            width: 20%; margin: 49px 10% 50px 0px; float:right; font-family: 'Roboto Condensed', sans-serif; 
+            border-radius: 10px; color: #000;">
+
+            <p >This is the Career Options website created by Rahul Natha. You can contribute to this website by
+                giving your interests and opinions in this <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSflqPFlLFZn2QkiDdXncAt-tnWm2oRYVqbD9NURNA0uVbNWYw/viewform"
+                    target="_blank">form</a>.
+            </p>
+        </div>
+
+        <div id="splashscreen"
+            style="position: fixed; top:0;left:0; bottom:0px; right:0; width:100%; height: calc(100% - 0px); border:none; margin: 0px 0px 0px 0px; padding:0; overflow:hidden; z-index:9999; background-color: rgb(36, 36, 36);display:none;">
+            <div style="position: fixed;top: calc(50% - 100px); left: calc(50% - 100px);">
+                <img style="animation: rotate 2s infinite;" width="200px"
+                    src="https://docs.google.com/drawings/d/e/2PACX-1vTsISpsKu-Hn0EdJePBw_UC3y5GBIL-4S-dauzSMiG3Ys3oksH13kBv2qcQLgWSBwhRNPkKgOmPcazN/pub?w=379&amp;h=379">
+            </div>
+        </div>
+
+        <div class="top-bar-for-google-sheet" id="topc">
+
+            <p style="margin: 4px 0px 4px 10px; " id="versiond"><a style="text-decoration: none; color:black; "
+                    href="https://natharahul.github.io/rahuldocs/career-options">Career Options - Version
+                    2.9.9.7</a></p>
+
+            <a href="https://natharahul.github.io" style="color:black;text-decoration: none;">
+                <button style="position: fixed; top: 4px; right: calc(60%); margin: 0px 20px 0px 0px; display:block;"
+                    type="button" class="removeonphone">
+                    <div class="tooltip">Home<span class="tooltiptext">Go to home page</span></div>
+                </button></a>
+
+
+           
+
+            <label id="dark-toggle"
+                style=" position: fixed; top: 4px; right: 4px; margin: 0px 20px 0px 0px;display:none;">
+                <div class="tooltip" style="display: none;" id="showdarkoption"> Dark theme
+                    <input id="darktoggle" type="checkbox" onclick="invert()" accesskey="d">
+                    <span class="tooltiptext">Dark theme (d)</span>
+                </div>
+            </label>
+
+        </div>
+
+
+        <div class="bottom-bar-for-google-sheet" id="bottomc">
+            <a href="https://natharahul.github.io">
+                <img height="25px" style="margin:5px 5px 5px 2px; float: left"
+                    src="https://docs.google.com/drawings/d/e/2PACX-1vQA4iiyPJ8Py6UjOW524b3qVO8LRSsglJVuLPbldYkJ9td08uvFLAWs1sGukrMnTgmdvkiBCbTap_jD/pub?w=280&amp;h=42">
+
+                <p style="font-size: 25px; margin: 4px 0 0 0; color: black; float: left">from Rahul Natha</p>
+            </a>
+
+            <p style="float: right; margin: 8px 2px 5px 0px" id="at">long ago.</p>
+            <p style="float: right; margin: 8px 2px 5px 0px" id="att">Website loaded at </p>
+        </div>
+
+    </div>
+
+
+
+    
+    <script>
+
+
+        function close_pop_up() {
+            document.getElementById("suggestion_gform_closed").style.display = "block";
+            document.getElementById("suggestion_gform").style.display = "none";
+        }
+
+        function pop_up_open() {
+            document.getElementById("suggestion_gform_closed").style.display = "none";
+            document.getElementById("suggestion_gform").style.display = "block";
+        }
+
+
+        function turnonaccess() {
+            var keyentered = document.getElementById("accesskey").value;
+            if (keyentered == "prep") {
+                document.getElementById("accesspage").style.display = "none";
+            }
+            else {
+                document.getElementById("accessreply").innerHTML = "Access denied!";
+            }
+            if (keyentered == "ea") {
+                document.getElementById("accesspage").style.display = "none";
+                document.getElementById("versiond").innerHTML = "Career Options - Version 2.6.1 Beta";
+            }
+            else {
+                document.getElementById("accessreply").innerHTML = "Access denied!";
+            }
+
+
+        }
+
+        document.getElementById("accesskey").addEventListener("keyup", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("accessbutton").click();
+            }
+        });
+
+        document.addEventListener("keyup", function (event) {
+            if (event.keyCode === 68) {
+                event.preventDefault();
+                document.getElementById("darktoggle").click();
+            }
+        });
+
+        document.addEventListener("keyup", function (event) {
+            if (event.keyCode === 67) {
+                event.preventDefault();
+                document.getElementById("calendarswitch").click();
+            }
+        });
+
+        document.addEventListener("keyup", function (event) {
+            if (event.keyCode === 77) {
+                event.preventDefault();
+                document.getElementById("mediaswitch").click();
+            }
+        });
+
+        document.addEventListener("keyup", function (event) {
+            if (event.keyCode === 70) {
+                event.preventDefault();
+                document.getElementById("hideonclick").click();
+            }
+        });
+        document.addEventListener("keyup", function (event) {
+            if (event.keyCode === 84) {
+                event.preventDefault();
+                window.open("https://www.t.me/rahulnatha");
+            }
+        });
+
+
+        document.addEventListener("keyup", function (event) {
+            if (event.keyCode === 72) {
+                event.preventDefault();
+                document.getElementById("mediaswitch").checked = false;
+                document.getElementById("calendarswitch").checked = false;
+                document.getElementById("mediapage").style.display = "none";
+                document.getElementById("sheet").style.display = "block";
+                document.getElementById("sheet2").style.display = "none";
+                document.getElementById("sheet3").style.display = "none";
+
+
+            }
+        });
+
+
+
+        var hour = new Date().getHours();
+        var date_time = new Date();
+        document.getElementById("at").innerHTML = date_time;
+
+        function invert() {
+
+
+            if (document.getElementById("darktoggle").checked == true) {
+                document.getElementById("topc").style.filter = "invert(90%)";
+                document.getElementById("bottomc").style.filter = "invert(90%)";
+                document.getElementById("sheet").style.filter = "invert(90%)";
+                document.getElementById("sheet2").style.filter = "invert(90%)";
+                document.getElementById("suggestion_gform").style.filter = "invert(0%)";
+                document.getElementById("suggestion_gform_closed").style.filter = "invert(0%)";
+                document.getElementById("sheetforinfo").style.backgroundColor = "#222";
+                document.getElementById("sheetforinfo").style.color = "#fff";
+
+                document.getElementById("dark-toggle").style.display = "block";
+                document.body.style.backgroundColor = "#121212";
+            }
+            else {
+                document.getElementById("topc").style.filter = "invert(0%)";
+                document.getElementById("bottomc").style.filter = "invert(0%)";
+                document.getElementById("sheet").style.filter = "invert(0%)";
+                document.getElementById("sheet2").style.filter = "invert(0%)";
+                document.getElementById("suggestion_gform").style.filter = "invert(0%)";
+                document.getElementById("suggestion_gform_closed").style.filter = "invert(0%)";
+                document.getElementById("sheetforinfo").style.backgroundColor = "#fff";
+                document.getElementById("sheetforinfo").style.color = "#000";
+
+                document.getElementById("dark-toggle").style.display = "block";
+                document.body.style.backgroundColor = "#eee";
+            }
+        }
+        document.getElementById("topc").style.filter = "invert(0%)";
+        document.getElementById("bottomc").style.filter = "invert(0%)";
+        document.getElementById("sheet").style.filter = "invert(0%)";
+        document.getElementById("sheet2").style.filter = "invert(0%)";
+        document.getElementById("suggestion_gform").style.filter = "invert(0%)";
+        document.getElementById("suggestion_gform_closed").style.filter = "invert(0%)";
+        document.getElementById("sheetforinfo").style.backgroundColor = "#fff";
+        document.getElementById("sheetforinfo").style.color = "#000";
+
+        document.getElementById("dark-toggle").style.display = "block";
+
+        document.body.style.backgroundColor = "grey";
+
+        function autoinvert() {
+
+            if (new Date().getHours() > 16 || new Date().getHours() < 6) {
+                document.getElementById("topc").style.filter = "invert(90%)";
+                document.getElementById("bottomc").style.filter = "invert(90%)";
+                document.getElementById("sheet").style.filter = "invert(100%)";
+                document.getElementById("sheet2").style.filter = "invert(90%)";
+                document.body.style.backgroundColor = "#121212";
+                document.getElementById("sheetforinfo").style.backgroundColor = "#121212";
+                document.getElementById("sheetforinfo").style.color = "#fff";
+
+                document.getElementById("darktoggle").checked = true;
+                document.getElementById("showdarkoption").style.display = "block";
+            }
+            else {
+                document.getElementById("topc").style.filter = "invert(0%)";
+                document.getElementById("bottomc").style.filter = "invert(0%)";
+                document.getElementById("sheet").style.filter = "invert(0%)";
+                document.getElementById("sheet2").style.filter = "invert(0%)";
+                document.getElementById("sheetforinfo").style.backgroundColor = "#fff";
+                document.getElementById("sheetforinfo").style.color = "#000";
+
+                document.getElementById("dark-toggle").style.display = "block";
+                document.body.style.backgroundColor = "#eee";
+                document.getElementById("darktoggle").checked = false;
+
+                document.getElementById("showdarkoption").style.display = "block";
+            }
+
+            document.getElementById("splashscreen").style.display = "none";
+
+
+
+        }
+
+        function navbar_style() {
+            if (document.getElementById("calendarswitch").checked == true) {
+
+                document.getElementById("mediaswitch").checked = false;
+                document.getElementById("mediapage").style.display = "none";
+                document.getElementById("sheet").style.display = "none";
+                document.getElementById("sheet2").style.display = "block";
+                document.getElementById("sheet3").style.display = "block";
+
+
+            }
+            else {
+                document.getElementById("sheet").style.display = "block";
+                document.getElementById("mediapage").style.display = "none";
+                document.getElementById("sheet2").style.display = "none";
+                document.getElementById("sheet3").style.display = "none";
+
+
+            }
+        }
+
+        function showmedia() {
+            if (document.getElementById("mediaswitch").checked == true) {
+
+
+                document.getElementById("mediapage").style.display = "block";
+                document.getElementById("calendarswitch").checked = false;
+                document.getElementById("sheet2").style.display = "none";
+                document.getElementById("sheet3").style.display = "none";
+
+
+            }
+            else {
+                document.getElementById("sheet").style.display = "block";
+                document.getElementById("mediapage").style.display = "none";
+                document.getElementById("sheet2").style.display = "none";
+                document.getElementById("sheet3").style.display = "none";
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        function decidefullscreen() {
+            var elem = document.getElementById("webpage");
+            if (document.getElementById("hideonclick").checked == true) {
+
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) { /* Safari */
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) { /* IE11 */
+                    elem.msRequestFullscreen();
+                }
+
+            }
+
+
+            if (document.getElementById("hideonclick").checked == false) {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) { /* Safari */
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) { /* IE11 */
+                    document.msExitFullscreen();
+                }
+
+            }
+        }
+    </script>
+    </div>
+
+    </div>
+</body>

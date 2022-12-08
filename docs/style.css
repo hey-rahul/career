@@ -28,12 +28,14 @@ body {
   cursor: none;
 }
 
+
+
 main {
   height: 100vh;
   padding: 100px;
   width: 80vw;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  /* display: grid; */
+  /* grid-template-rows: repeat(2, 1fr); */
 }
 main .links {
   display: flex;
@@ -45,7 +47,7 @@ main .links .link {
   
   position: relative;
   font-size: 0.95rem;
-  font-family: "Sainte Colombe";
+  
   text-decoration: none;
   color: var(--color);
   margin: 2rem;
@@ -166,3 +168,28 @@ p {
   margin-top: 20px;
   font-size: large;
 }
+
+@media only screen and (max-width: 750px) {
+  main {
+    height: 100vh;
+    padding: 20px;
+    width: 100vw;
+    /* display: grid; */
+    /* grid-template-rows: repeat(2, 1fr); */
+  }
+  }
+
+
+
+  .hlight {
+    border: 2px solid grey;
+    border-radius: 50vmin;
+    padding: 20px; text-decoration: none;
+    color:rgb(190, 190, 190);
+  }
+
+  .hlight:hover {
+    border: 02px solid rgb(128, 128, 128);
+    border-radius: 50vmin;
+    text-decoration: none; color:#eee;
+  }

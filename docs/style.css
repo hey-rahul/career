@@ -2,14 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+
 
   box-sizing: inherit;
   box-sizing: border-box;
-  
+
   z-index: 1;
   font-family: 'Work Sans', sans-serif;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Work+Sans:wght@300&display=swap');
 
@@ -37,23 +38,26 @@ main {
   /* display: grid; */
   /* grid-template-rows: repeat(2, 1fr); */
 }
+
 main .links {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 main .links .link {
   --color: rgba(255, 255, 255, 0.5);
-  
+
   position: relative;
   font-size: 0.95rem;
-  
+
   text-decoration: none;
   color: var(--color);
   margin: 2rem;
   cursor: none;
   transition: color 300ms ease;
 }
+
 main .links .link::after {
   content: "";
   position: absolute;
@@ -66,18 +70,22 @@ main .links .link::after {
   transform: scaleX(0);
   transition: transform 300ms ease;
 }
+
 main .links .link:hover {
   --color: rgb(255, 255, 255);
 }
+
 main .links .link:hover::after {
   transform-origin: left;
   transform: scaleX(1);
 }
+
 main .socials {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 main .socials .social {
   --icon-size: 40px;
   width: var(--icon-size);
@@ -90,15 +98,19 @@ main .socials .social {
   color: #fff;
   background: var(--bg);
 }
+
 main .socials .social.codepen {
   --bg: #000;
 }
+
 main .socials .social.youtube {
   --bg: #c4302b;
 }
+
 main .socials .social.dribbble {
   --bg: #ea4c89;
 }
+
 main .socials .social.twitter {
   --bg: #00acee;
 }
@@ -117,20 +129,24 @@ main .socials .social.twitter {
   pointer-events: none;
   user-select: none;
 }
+
 .cursor .cursor--text {
   --cursor-size: fit-content;
   font-size: 0.75rem;
   color: #fff;
   opacity: 0;
 }
+
 .cursor .cursor--text .text {
   font-family: sans-serif;
   font-weight: bold;
 }
+
 .cursor .cursor--small {
   --cursor-size: 20px;
   background: #fff;
 }
+
 .cursor .cursor--large {
   --cursor-size: 60px;
   border: 2px solid #fff;
@@ -143,6 +159,7 @@ main .socials .social.twitter {
   padding: 10px;
   display: flex;
 }
+
 .support a {
   margin: 0 15px;
   color: #fff;
@@ -151,6 +168,7 @@ main .socials .social.twitter {
   transition: all 150ms ease;
   mix-blend-mode: difference;
 }
+
 .support a:hover {
   transform: scale(1.1);
 }
@@ -161,7 +179,7 @@ main article {
 }
 
 h1 {
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
 p {
@@ -177,19 +195,25 @@ p {
     /* display: grid; */
     /* grid-template-rows: repeat(2, 1fr); */
   }
+
+  #removeOnPhone {
+    display: none;
   }
+}
 
 
 
-  .hlight {
-    border: 2px solid grey;
-    border-radius: 50vmin;
-    padding: 20px; text-decoration: none;
-    color:rgb(190, 190, 190);
-  }
+.hlight {
+  border: 2px solid grey;
+  border-radius: 50vmin;
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(190, 190, 190);
+}
 
-  .hlight:hover {
-    border: 02px solid rgb(128, 128, 128);
-    border-radius: 50vmin;
-    text-decoration: none; color:#eee;
-  }
+.hlight:hover {
+  border: 02px solid rgb(128, 128, 128);
+  border-radius: 50vmin;
+  text-decoration: none;
+  color: #eee;
+}

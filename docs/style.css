@@ -196,7 +196,11 @@ p {
     /* grid-template-rows: repeat(2, 1fr); */
   }
 
-  #removeOnPhone {
+h1{
+  font-size: 18px;
+}
+
+  .removeOnPhone {
     display: none;
   }
 }

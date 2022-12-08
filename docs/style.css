@@ -203,6 +203,10 @@ h1{
   .removeOnPhone {
     display: none;
   }
+
+  .ShowOnPhone {
+    display:block;
+  }
 }
 
 

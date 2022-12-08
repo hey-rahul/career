@@ -187,6 +187,10 @@ p {
   font-size: large;
 }
 
+.ShowOnPhone {
+  display: none;
+}
+
 @media only screen and (max-width: 750px) {
   main {
     height: 100vh;
@@ -206,6 +210,8 @@ h1{
 
   .ShowOnPhone {
     display:block;
+    color: #eee;
+  font-family: 'Work Sans', sans-serif;
   }
 }
 

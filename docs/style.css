@@ -195,6 +195,24 @@ p {
   display: none;
 }
 
+
+.hlight, .support {
+  border: 2px solid grey;
+  border-radius: 50vmin;
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(190, 190, 190); 
+}
+
+
+
+.hlight:hover, .support:hover {
+  border: 02px solid rgb(128, 128, 128);
+  border-radius: 50vmin;
+  text-decoration: none; cursor: none;
+  color: #eee;
+}
+
 @media only screen and (max-width: 750px) {
   main {
     height: 100vh;
@@ -217,21 +235,24 @@ h1{
     color: #eee;
   font-family: 'Work Sans', sans-serif;
   }
+
+   .support {
+    border: 0px solid grey;
+    border-radius: 0;
+    padding: 0px;
+    text-decoration: none;
+    color: rgb(190, 190, 190); 
+  }
+  
+  
+  
+   .support:hover {
+    border: 0px solid rgb(128, 128, 128);
+    border-radius: 0;
+    text-decoration: none; cursor: none;
+    color: #eee;
+  }
+
 }
 
 
-
-.hlight {
-  border: 2px solid grey;
-  border-radius: 50vmin;
-  padding: 20px;
-  text-decoration: none;
-  color: rgb(190, 190, 190);
-}
-
-.hlight:hover {
-  border: 02px solid rgb(128, 128, 128);
-  border-radius: 50vmin;
-  text-decoration: none;
-  color: #eee;
-}

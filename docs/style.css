@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #202020;
+  overflow: hidden;
+  cursor: none;
+}
+
+main {
+  height: 200px;
+  width: 300px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+main .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .links .link {
+  --color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  font-size: 0.95rem;
+  font-family: "Sainte Colombe";
+  text-decoration: none;
+  color: var(--color);
+  margin: 2rem;
+  cursor: none;
+  transition: color 300ms ease;
+}
+main .links .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: white;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 300ms ease;
+}
+main .links .link:hover {
+  --color: rgb(255, 255, 255);
+}
+main .links .link:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+main .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .socials .social {
+  --icon-size: 40px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin: 1.5rem;
+  color: #fff;
+  background: var(--bg);
+}
+main .socials .social.codepen {
+  --bg: #000;
+}
+main .socials .social.youtube {
+  --bg: #c4302b;
+}
+main .socials .social.dribbble {
+  --bg: #ea4c89;
+}
+main .socials .social.twitter {
+  --bg: #00acee;
+}
+
+.cursor .cursor--small,
+.cursor .cursor--large,
+.cursor .cursor--text {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  user-select: none;
+}
+.cursor .cursor--text {
+  --cursor-size: fit-content;
+  font-size: 0.75rem;
+  color: #fff;
+  opacity: 0;
+}
+.cursor .cursor--text .text {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.cursor .cursor--small {
+  --cursor-size: 20px;
+  background: #fff;
+}
+.cursor .cursor--large {
+  --cursor-size: 60px;
+  border: 2px solid #fff;
+}
+
+.support {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  display: flex;
+}
+.support a {
+  margin: 0 15px;
+  color: #fff;
+  font-size: 1.8rem;
+  backface-visibility: hidden;
+  transition: all 150ms ease;
+  mix-blend-mode: difference;
+}
+.support a:hover {
+  transform: scale(1.1);
+}

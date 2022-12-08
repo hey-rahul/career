@@ -27,6 +27,10 @@ body {
   background: #202020;
   overflow: hidden;
   cursor: none;
+  background-image: url('./pexels-pixabay-247676.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
 }
 
 

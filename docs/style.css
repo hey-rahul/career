@@ -126,7 +126,7 @@ main .socials .social.twitter {
   left: 0;
   top: 0;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
+  border-radius: 50vmin;
   width: var(--cursor-size);
   height: var(--cursor-size);
   mix-blend-mode: difference;

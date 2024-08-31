@@ -32,7 +32,7 @@
 
 <body id="body" class="dark_color_theme " onload="auto()">
 
-    <div id="announcement_bar" class="h">
+    <div id="announcement_bar" class="h hidden">
         <p id="announcement_message">
             Welcome to the new Career Options website. This site will receive beta updates regularly for user interface
             and
@@ -51,7 +51,7 @@
 
             <span id="version" class="show_on_expand" style="float: left;"> loading</span>
 
-            <input type="search" name="global_search" id="global_search_bar" placeholder="Search" class="always_show">
+            <input class="hidden" type="search" name="global_search" id="global_search_bar" placeholder="Search" class="always_show">
 
             <label class="bar_switch show_on_expand expand1" id="dark_toggle_w">Dark theme
                 <span class="switch">
@@ -98,9 +98,9 @@
     </header>
 
 
-    <div id="developer_options" class="hid">
+    <div id="developer_options" class="hid hidden">
 
-        <div class="the_content">
+        <div class="the_content hidden">
             <h1 style="display: inline-block;">Caution! Something wrong.</h1>
 
             <label class="setting">Set theme based on
@@ -116,7 +116,7 @@
     </div>
 
     <div class="bottom-bar" id="bottom_bar">
-        <img src="images/rd.png" height="26px" alt="logo" style="filter: invert(100%);" id="brand_logo" />
+        <img src="assets/images/logo.png" height="26px" alt="logo"  id="brand_logo" />
         <p style="float: right; margin: 1px 2px 5px 0px" id="at">Wait a moment.</p>
 
     </div>
@@ -268,7 +268,7 @@
 
             </div>
 
-            <div class=" blog">
+            <div class=" blog hidden">
 
                 <h1>The First Blog on this Website</h1>
 

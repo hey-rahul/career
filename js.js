@@ -174,7 +174,7 @@ function auto() {
 
     setTimeout(function () { welcome_message.innerHTML = "What's up?"; }, 3000);
     setTimeout(function () { welcome_message.innerHTML = "Take a look at the new stuff here!"; }, 6000);
-    setTimeout(function () { welcome_message.innerHTML = "Excited to see you read the blog."; }, 9000);
+    setTimeout(function () { welcome_message.innerHTML = "Excited to see you here."; }, 9000);
 
     if (hour > 16 || hour < 6) {
 
